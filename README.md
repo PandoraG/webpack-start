@@ -20,7 +20,11 @@ $ webpack
 ```
 
 
-## 配置loader
+## loader
+### 什么是loader
+加载器（loader）其实就是一个转换器。webpack只会讲js文件视为模块，那么对于非js文件（如：.vue、.css、.sass/.scss、图片、jsx、coffescript等）怎么办呢？这就是loader的作用，将这些文件（原文件）转换为js文件（新的资源模块）。
+
+### 配置loader
 这里有一点需要注意的，那就是webpack从2.0版后就不再支持配置loader时缩写了。让我们看一看下面示例：
 
 在1.x版时，你可以这样配置loader。
