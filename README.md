@@ -52,7 +52,7 @@ loaders: [
 
 ### 常用的一些插件
 
-*html-webpack-plugin*: 建立一个html模板，自动插入打包的js
+**html-webpack-plugin**: 建立一个html模板，自动插入打包的js
 html-webpack-plugin可以根据你设置的模板，在每次运行后生成对应的模板文件，同时所依赖的CSS/JS也都会被引入，如果CSS/JS中含有hash值，则html-webpack-plugin生成的模板文件也会引入正确版本的CSS/JS文件。
 
 安装（Install）：
@@ -108,7 +108,7 @@ module.exports = {
 ```
 
 
-*webpack-merge*: 可以把分开配置的config合并，分开生产环境和调试环境
+**webpack-merge**: 可以把分开配置的config合并，分开生产环境和调试环境
 ```js
 const merge = require('webpack-merge');
 const commonConfig= {...};
@@ -118,7 +118,7 @@ config = merge(commonConfig, {});
 ```
 
 
-*webpack-dev-server*: 自刷新页面，更改代码后可以自动刷新，最常用的module
+**webpack-dev-server**: 自刷新页面，更改代码后可以自动刷新，最常用的module
 ```js
 
 exports.devServer = function(options) {
@@ -167,7 +167,7 @@ exports.devServer = function(options) {
 ```
 
 
-*webpack-dev-middleware* 和 *webpack-hot-middleware*
+**webpack-dev-middleware** 和 **webpack-hot-middleware**
 
 webpack-dev-middleware: 对更改的文件进行监控,专业点叫做伺服器。
 webpack-hot-middleware: 是用来进行页面的热重载的。
